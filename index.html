@@ -94,10 +94,32 @@
   <hr />
 
   <div>
+    <h2>Building my own Forms</h2>
     <form>
+      <!-- Creating Questions for a small survey -->
       <label for="question"> Question 1: What do you like to eat? </label>
-      <input type="image">
+      <input type="text">
       <br />
+
+      <!-- Asking about experience at store -->
+      <label for="question">Question 2: What was your experience like? </label>
+      <input type="radio" class="question">
+      <select class="select">
+        <option value="bad">bad</option>
+        <option value="pretty bad">pretty bad</option>
+        <option value="normal">normal</option>
+        <option value="pretty good">pretty good</option>
+        <option value="great">great</option>
+      </select>
+
+      <br />
+
+      <!-- Asking about what we could do better  -->
+      <label for="question"> What could we do better? </label>
+      <input type="text" class="question">
+      <textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea>
+
+
     </form>
   </div>
 
