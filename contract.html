@@ -16,70 +16,80 @@
     </h1>
   </div>
 
+  <div class="App">
 
-  <p>Fill out the neccessary information, choose membership option, then purchase</p>
+    <p>Fill out the neccessary information, choose membership option, then purchase</p>
 
-  <div class="Personal Info">
-    <form method="POST">
-      <fieldset>
-        <legend>User Information</legend>
-        <br />
+    <div class="Personal Info">
+      <form method="POST">
+        <fieldset>
+          <legend>User Information</legend>
+          <br />
 
-        <!-- First Name, Middle, and Last Name -->
-        <input type="text" name="fName" value="First Name">
-        <input type="text" name="mName" value="Middle Name">
-        <input type="text" name="lName" value="Last Name">
+          <!-- First Name, Middle, and Last Name -->
+          <input type="text" name="fName" value="First Name">
+          <input type="text" name="mName" value="Middle Name">
+          <input type="text" name="lName" value="Last Name">
 
-        <br />
-        <br />
+          <br />
+          <br />
 
-        <input type="email" name="userEmail" value="Johndoe@gmail.com">
-        <br />
-        <label name="userEmail">Email</label>
+          <input type="email" name="userEmail" value="Johndoe@gmail.com">
+          <br />
+          <label name="userEmail">Email</label>
 
-      </fieldset>
+        </fieldset>
 
-    </form>
+      </form>
+    </div>
+
+    <br />
+    <hr />
+    <br />
+
+    <div class="ProgramType">
+      <form method="POST">
+        <fieldset>
+          <legend>Choosing Program Type</legend>
+          <br />
+
+          <!-- Please Select the following membership options -->
+          <input list="membershipType">
+          <datalist id="membershipType" class="membershipType">
+            <option value="Bronze">
+            <option value="Silver">
+            <option value="Gold">
+            <option value="Platnum">
+          </datalist>
+
+
+        </fieldset>
+
+      </form>
+    </div>
+
+    <br />
+    <hr />
+    <br />
+
+    <div class="Payment">
+      <form method="POST">
+        <fieldset>
+          <legend>Payment</legend>
+
+          <!-- Please select the method of Payment -->
+
+
+
+        </fieldset>
+
+      </form>
+    </div>
+
   </div>
 
-  <br />
-  <hr />
-  <br />
-
-  <div class="ProgramType">
-    <form method="POST">
-      <fieldset>
-        <legend>Choosing Program Type</legend>
-        <br />
-
-        <!-- Please Select the following membership options -->
-        <input list="membershipType">
-        <datalist id="membershipType" class="membershipType">
-          <option value="Bronze">
-          <option value="Silver">
-          <option value="Gold">
-          <option value="Platnum">
-        </datalist>
 
 
-      </fieldset>
-
-    </form>
-  </div>
-
-  <br />
-  <hr />
-  <br />
-  <div class="Payment">
-    <form method="POST">
-      <fieldset>
-        <legend>Payment</legend>
-
-        <!-- Please select the method of Payment -->
-      </fieldset>
-
-    </form>
-  </div>
 
 </body>
 
